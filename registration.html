@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href= css/styles.css>
+
+
+<script type = "HTML Assignment Week2\validate.js">
+   <!--
+      // Form validation code will come here.
+      function validate() {
+
+         if( document.myForm.Name.value == "" ) {
+            alert( "Please provide your name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+         if( document.myForm.EMail.value == "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.EMail.focus() ;
+            return false;
+         }
+         if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+            document.myForm.Zip.value.length != 5 ) {
+
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.Zip.focus() ;
+            return false;
+         }
+         if( document.myForm.Country.value == "-1" ) {
+            alert( "Please provide your country!" );
+            return false;
+         }
+         return( true );
+      }
+
+
+      function validateForm() {
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+
+   //-->
+</script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+  <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+  <h1>REGISTRATION PAGE:</h1>
+  <a href="https://www.iiit.ac.in/">
+ <img class="ll" src="images/logo.png">
+</a>
+
+      <p class="RDIP"><a href="https://serc.iiit.ac.in/rdip">RDIP</a></p>
+      <br>
+    <ul>
+      <li><a href="file:///D:/RDIP%20Internship/HTML%20Assignment%20Week1/homepage.html">Home</a></li>
+      <li><a href="file:///D:/RDIP%20Internship/HTML%20Assignment%20Week1/registration.html">Registration Form</a></li>
+    </ul>
+<br><br>
+
+<div class="form">
+
+  <label for="fname">First name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+
+
+  <label class="right" for="lname">Email:</label>
+  <input type="text" id="email" name="email"><br><br>
+  <label for="lname">Phone no.:  </label>
+  <input type="text" id="Phone" name="phone"><br><br>
+
+
+  <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="other" value="other">
+    <label for="male">Other</label><br><br>
+
+    <label for="reason">Reason for RDIP: </label>
+    <input type="checkbox" id="html" name="html" value="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" id="css" name="css" value="css">
+    <label for="vehicle2">CSS</label>
+    <input type="checkbox" id="Javascript" name="Javascript" value="Javascript">
+    <label for="vehicle3">Javascript</label><br><br>
+
+    <label for="college">College:  </label>
+    <input type="text" id="college" name="college"><br><br>
+
+
+    <input type="checkbox" id="verify" name="verify" value="verify">
+    <label for="verify">I declare above the details given by me are true.</label><br><br>
+
+<div class="submit">
+
+  <input type="submit" value="Submit">
+
+
+  <input type="reset" value="Reset">
+</div>
+</form>
+</div>
+</body>
+<html>
